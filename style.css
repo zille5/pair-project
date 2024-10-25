@@ -7,9 +7,6 @@ header{min-height: 8rem;
        background-color: aqua;
         text-align: center;}
 
-    header>h1{color: white;}
-    header>h3{color: white;}
-
 .divide{display: flex;
     justify-content: center;
     flex-direction: row;
@@ -38,7 +35,9 @@ header{min-height: 8rem;
 img{padding: 0;
     margin: 0;
     width: 150px;
-    height: auto;}
+    height: auto;
+    border-radius: 10%;
+}
         
 
 nav{min-height: 8rem;
@@ -73,6 +72,42 @@ text-align: center;}
 min-height: 25rem;
 background-color: white;
 text-align: left;}
+
+.Contenedor3{display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    max-width: 108%;
+    height: 100%;
+    min-height: 8rem;
+    background-color: rgb(7, 7, 25);
+    text-align: center;
+    color: white;
+     gap: 100px;
+    width: 108%;}
+
+.Contenedor4{display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    max-width: 108%;
+    height: 100%;
+    min-height: 3rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+width: 108%;}
+
+    .Contenedor5{display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        height: 100%;
+        min-height: 3rem;
+        background-color: rgb(20, 20, 85);
+        text-align: center;
+        color: white;}
 
 .titulo-blanco{text-align: center;
 color: white;
@@ -131,6 +166,39 @@ margin-top: 5%;}
     box-sizing: border-box;
 }
 
+.footer-column{margin-bottom: 20px;}
 
 footer{min-height: 8rem;
         background-color: rgb(3, 3, 65);}
+
+
+        .column h3{margin-bottom: 10px;
+            font-size: 1.2rem;color: white;
+        text-align: center;
+     }
+     @media screen and (max-width: 900px){
+
+        header img {width: 20%;}
+        
+        main, header, footer, nav {display: flex;
+                                flex-direction: column;
+                                position: static;
+                                font-size: 13px;}
+        
+        nav img {width: 20%;}}
+        
+        
+        
+        
+        @media only screen and (max-width: 200px) {
+        
+        header img {width: 5%;}
+        
+        main, header, footer, nav {display: flex;
+                                flex-direction: column;
+                                position: static;
+                                font-size: 5px;}
+        
+        nav img {width: 5%;}}
+           
+           
